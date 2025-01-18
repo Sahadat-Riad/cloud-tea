@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="lofi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind  and daysi UI-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind Custome color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-manrope {
+        font-family: "Manrope", serif;
+      }
+    </style>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/10a3f19584.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cloud Tea</title>
+  </head>
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <!-- Header part begin -->
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea times at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="btn btn-outline text-black">Explore More</button>
+          </div>
+          <!-- banner image -->
+          <div>
+            <img src="images/banner.png" class="max-w-sm" />
+            <!-- ratings badge -->
+            <div
+              class="-mt-16 flex items-center gap-4 drop-shadow bg-white p-5 w-60"
+            >
+              <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+              <div>
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust pilot rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header part End -->
+
+    <main class="container mx-auto">
+      <!-- Main part begin -->
+      <!-- feature section -->
+      <section class="text-center my-24">
+        <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
+        <p class="lg:max-w-3xl mx-auto mb-12 text-gray-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+          consequatur deserunt praesentium quas laboriosam nemo, deleniti ex
+          corporis nulla tempore!
+        </p>
+        <!-- card container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- First card -->
+          <div
+            class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] p-8 border-2 border-x-amber-100 border-y-white"
+          >
+            <figure>
+              <img src="images/tea-1.png" alt="tea-1" />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <!-- second card -->
+          <div
+            class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] p-8 border-2 border-x-amber-100 border-y-white"
+          >
+            <figure>
+              <img src="images/tea-2.png" alt="tea-2" />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Black Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <!-- First card -->
+          <div
+            class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] p-8 border-2 border-x-amber-100 border-y-white"
+          >
+            <figure>
+              <img src="images/tea-3.png" alt="tea-3" />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Lemon Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div
+            class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] p-8 border-2 border-x-amber-100 border-y-white"
+          >
+            <figure>
+              <img src="images/tea-4.png" alt="tea-4" />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Green Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Great Tea Fresh tea section -->
+      <section class="my-24 flex flex-col lg:flex-row gap-12">
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 flex-1">
+          <div
+            class="h-36 rounded-xl bg-gradient-to-r from-red-100 to-cyan-100"
+          ></div>
+          <div
+            class="row-span-2 bg-[#E6A6231A] rounded-lg px-8 py-12 flex items-center justify-center"
+          >
+            <img src="images/fresh-1.png" alt="" />
+          </div>
+          <div
+            class="row-span-2 bg-[#5776391A] rounded-lg px-8 py-12 flex items-center justify-center"
+          >
+            <img src="images/fresh-2.png" alt="" />
+          </div>
+          <div
+            class="h-36 rounded-xl bg-gradient-to-r from-red-100 to-cyan-100"
+          ></div>
+        </div>
+        <div class="space-y-5 flex-1">
+          <h3 class="text-5xl font-extrabold">
+            Great Tea, Freshly<br />
+            Presented
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, incidunt sed quod sapiente maxime aliquid! Deserunt,
+            neque? Ut maiores ex vel blanditiis tenetur eveniet fugit cum,
+            delectus, voluptatum quisquam velit praesentium eligendi aperiam
+            quasi! Necessitatibus voluptates maxime voluptatibus quibusdam
+            molestias.
+          </p>
+          <h4 class="text-xl font-extrabold">Unique Test</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+            beatae ipsam optio repellat laudantium corporis vitae voluptas a
+            quos incidunt!
+          </p>
+          <h4 class="text-xl font-extrabold mt-8">Premium Quality</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+            beatae ipsam optio repellat laudantium corporis vitae voluptas a
+            quos incidunt!
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Main part End -->
+
+    <footer>
+      <!-- Footer part begin -->
+    </footer>
+    <!-- Footer part end -->
+  </body>
+</html>
