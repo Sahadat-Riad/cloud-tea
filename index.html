@@ -18,6 +18,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "t-gray": "#808080",
             },
           },
         },
@@ -48,15 +49,17 @@
   <body class="font-manrope">
     <header class="container mx-auto">
       <!-- Header part begin -->
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div class="my-20">
+        <div
+          class="flex justify-between flex-col lg:flex-row ml-4 items-center"
+        >
           <div>
             <h1 class="text-7xl font-extrabold">
               It's good <br />
               tea times at The <br />
               Tea House
             </h1>
-            <p class="py-6">
+            <p class="py-6 text-t-gray">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
@@ -65,7 +68,7 @@
           </div>
           <!-- banner image -->
           <div>
-            <img src="images/banner.png" class="max-w-sm" />
+            <img src="images/banner.png" class="" />
             <!-- ratings badge -->
             <div
               class="-mt-16 flex items-center gap-4 drop-shadow bg-white p-5 w-60"
@@ -87,7 +90,7 @@
       <!-- feature section -->
       <section class="text-center my-24">
         <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
-        <p class="lg:max-w-3xl mx-auto mb-12 text-gray-500">
+        <p class="lg:max-w-3xl mx-auto mb-12 text-t-gray">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
           consequatur deserunt praesentium quas laboriosam nemo, deleniti ex
           corporis nulla tempore!
@@ -103,7 +106,7 @@
             </figure>
             <div class="card-body justify-center">
               <h2 class="text-2xl font-bold">Milk Tea</h2>
-              <p>Creamer could be replaced by fresh milk</p>
+              <p class="text-t-gray">Creamer could be replaced by fresh milk</p>
             </div>
           </div>
           <!-- second card -->
@@ -115,7 +118,7 @@
             </figure>
             <div class="card-body justify-center">
               <h2 class="text-2xl font-bold">Black Tea</h2>
-              <p>Creamer could be replaced by fresh milk</p>
+              <p class="text-t-gray">Creamer could be replaced by fresh milk</p>
             </div>
           </div>
           <!-- First card -->
@@ -127,7 +130,7 @@
             </figure>
             <div class="card-body justify-center">
               <h2 class="text-2xl font-bold">Lemon Tea</h2>
-              <p>Creamer could be replaced by fresh milk</p>
+              <p class="text-t-gray">Creamer could be replaced by fresh milk</p>
             </div>
           </div>
           <!-- fourth card -->
@@ -139,7 +142,7 @@
             </figure>
             <div class="card-body justify-center">
               <h2 class="text-2xl font-bold">Green Tea</h2>
-              <p>Creamer could be replaced by fresh milk</p>
+              <p class="text-t-gray">Creamer could be replaced by fresh milk</p>
             </div>
           </div>
         </div>
@@ -169,7 +172,7 @@
             Great Tea, Freshly<br />
             Presented
           </h3>
-          <p>
+          <p class="text-t-gray">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus, incidunt sed quod sapiente maxime aliquid! Deserunt,
             neque? Ut maiores ex vel blanditiis tenetur eveniet fugit cum,
@@ -178,13 +181,13 @@
             molestias.
           </p>
           <h4 class="text-xl font-extrabold">Unique Test</h4>
-          <p>
+          <p class="text-t-gray">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
             beatae ipsam optio repellat laudantium corporis vitae voluptas a
             quos incidunt!
           </p>
           <h4 class="text-xl font-extrabold mt-8">Premium Quality</h4>
-          <p>
+          <p class="text-t-gray">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
             beatae ipsam optio repellat laudantium corporis vitae voluptas a
             quos incidunt!
@@ -207,7 +210,9 @@
               ullam quia suscipit ipsam et! Quos qui blanditiis adipisci
               tempore, soluta dicta odit perferendis beatae.
             </p>
-            <button class="btn btn-outline text-white rounded-lg">
+            <button
+              class="btn btn-outline hover:bg-white hover:text-black hover:border-white text-white rounded-lg"
+            >
               Show all
             </button>
           </div>
@@ -276,12 +281,139 @@
           </div>
         </div>
       </section>
+      <!-- News and events section -->
+      <section class="my-24 ml-4 space-y-5">
+        <div class="space-y-5 text-center justify-center">
+          <h2 class="text-5xl font-extrabold">News & Events</h2>
+          <div class="w-3/4 relative left-16 lg:left-32">
+            <p class="text-t-gray mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium quo quos, est natus, quis ab omnis voluptatum saepe id
+              doloremque impedit maiores tenetur consequatur repellat ratione
+              quia aspernatur vel dolore sunt? Eaque commodi, quaerat itaque
+              deleniti possimus non cumque consequatur.
+            </p>
+          </div>
+        </div>
+        <!--first news  -->
+        <div class="relative top-10">
+          <div class="flex flex-col lg:flex-row gap-5">
+            <div class="card shadow-xl py-4 border-2">
+              <figure>
+                <img src="images/news-1.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h4 class="text-t-gray">Feb 05, 2025</h4>
+                <h2 class="card-title text-left">
+                  Collection 8 point for <br />
+                  discount
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div>
+                  <button class="btn btn-outline">Learn more</button>
+                </div>
+              </div>
+            </div>
+
+            <!--second news  -->
+
+            <div class="card shadow-xl py-4 border-2">
+              <figure>
+                <img src="images/news-2.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h4 class="text-t-gray">Feb 05, 2025</h4>
+                <h2 class="card-title text-left">
+                  Collection 8 point for <br />
+                  discount
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div>
+                  <button class="btn btn-outline">Learn more</button>
+                </div>
+              </div>
+            </div>
+
+            <!--third news  -->
+
+            <div class="card shadow-xl py-4 border-2">
+              <figure>
+                <img src="images/news-3.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h4 class="text-t-gray">Feb 05, 2025</h4>
+                <h2 class="card-title text-left">
+                  Collection 8 point for <br />
+                  discount
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div>
+                  <button class="btn btn-outline">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Main part End -->
 
-    <footer>
-      <!-- Footer part begin -->
+    <!-- Footer  -->
+    <footer
+      class="bg-gradient-to-r from-red-100 to-amber-100 text-base-content px-4 lg:px-36 py-10"
+    >
+      <div class="flex justify-between my-24">
+        <img src="images/cup.png" alt="" />
+        <p>
+          <span>Ready to get started</span>
+          <button class="btn btn-outline">Get started</button>
+        </p>
+      </div>
+      <div class="footer">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="py-4 bg-transparent border-b-2 border-black outline-none"
+              />
+              <button
+                class="btn bg-gradient-to-r from-red-500 to-orange-500 rounded-full"
+              >
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <aside class="mt-10 text-center text-t-gray">
+        <p>Copyright © 2027- All right reserved by ACME Industries Ltd</p>
+      </aside>
     </footer>
-    <!-- Footer part end -->
   </body>
 </html>
